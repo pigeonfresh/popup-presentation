@@ -1,0 +1,17 @@
+title: Home
+
+meta:
+  id: '' # can be number or string, used for ordering
+  status: '' # dev, qa, feedback, done
+  notes: '' # add some information about the page
+  category: '' # to group pages in the overview
+
+blocks:
+  - name: awesome-block
+    data: import!../app/component/block/awesome-block/data/default
+
+  - name: scroll-block
+    data: import!../app/component/block/scroll-block/data/default
+
+  - name: n01-popup
+    data: import!../app/component/block/n01-popup/data/default

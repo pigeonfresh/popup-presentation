@@ -1,0 +1,19 @@
+.awesome-block {
+  min-height: 110vh;
+  color: magenta;
+  background: currentColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .cta-button {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 2rem;
+    background: #fff;
+    color: currentColor;
+    cursor: pointer;
+  }
+}

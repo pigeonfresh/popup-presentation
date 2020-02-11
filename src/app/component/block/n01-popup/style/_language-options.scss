@@ -1,0 +1,9 @@
+.language-options {
+  margin: 4rem 0;
+
+  .option {
+    &:not(:first-of-type) {
+      margin-top: 2rem;
+    }
+  }
+}

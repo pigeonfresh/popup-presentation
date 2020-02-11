@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="./n01-popup.scss">
+<script src="./N01Popup.ts"></script>
+
+<div class="n01-popup is-hidden" data-component="n01-popup">
+  <span class="overlay" data-overlay></span>
+  <div class="content-wrapper" data-content-wrapper>
+    <button class="close-button" data-close-button>
+      close
+    </button>
+    <h1 data-transition-item>Language Selector</h1>
+    <ul class="language-options">
+      {{#each language}}
+      <li class="option" data-transition-item>{{copy}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+.n01-popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &.is-hidden {
+    visibility: hidden;
+  }
+
+  @import "style/overlay";
+  @import "style/content-wrapper";
+  @import "style/close-button";
+  @import "style/language-options";
+}

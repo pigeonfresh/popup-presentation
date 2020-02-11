@@ -1,0 +1,45 @@
+@import "~normalize.css";
+@import "~seng-scss";
+
+/* Globally available project specific mixins, functions and variables */
+@import "global";
+
+@import "type/font";
+@import "type/type";
+
+// Generic stuff
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  color: #999;
+}
+
+button {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  color: currentColor;
+
+  &:focus {
+    outline: none;
+  }
+}

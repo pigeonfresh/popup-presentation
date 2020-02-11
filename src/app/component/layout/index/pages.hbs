@@ -1,0 +1,29 @@
+<ul>
+  {{#each pages}}
+  {{! any data from the page json can be used here as 'data.*'}}
+    <li class="page {{# if data.meta.status }}status-{{data.meta.status}}{{/if}} {{# if data.meta.alt }}alt{{/if}}">
+      {{# if data.meta.id }}<span class="id">{{data.meta.id}}</span>{{/if}}
+      <a href="{{link}}">{{page}}</a><sup>{{data.blocks.length}} blocks</sup>
+      {{# if data.meta.notes }}<span class="notes">{{data.meta.notes}}</span>{{/if}}
+      <ul class="blocks">
+        {{#each data.blocks}}
+          <li>{{name}}</li>
+        {{/each}}
+      </ul>
+    </li>
+  {{else}}
+    <li class="no-pages">
+      <p>You currently don't have any pages.</p>
+      <p>
+        You can use seng-generator to create an new page:<br />
+        <code>sg page foo -v blocks=header,footer</code>
+      </p>
+      <p>Or create a <code>page.yaml</code> yourself in <code>/src/data/</code>.</p>
+
+      <p>
+        Blocks can be added by running:<br />
+        <code>sg block BlockName</code>
+      </p>
+    </li>
+  {{/each}}
+</ul>
